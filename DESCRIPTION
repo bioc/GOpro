@@ -2,8 +2,8 @@ Package: GOpro
 Type: Package
 Title: Find the most characteristic gene ontology terms for groups of
         human genes
-Version: 1.1.0
-Date: 2016-08-31
+Version: 1.1.1
+Date: 2017-04-04
 Author: Lidia Chrabaszcz
 Maintainer: Lidia Chrabaszcz <chrabaszcz.lidia@gmail.com>
 Description: Find the most characteristic gene ontology terms for
@@ -12,7 +12,7 @@ Description: Find the most characteristic gene ontology terms for
         (http://mi2.mini.pw.edu.pl/,
         https://github.com/geneticsMiNIng).
 License: GPL-3
-Depends: R (>= 3.3)
+Depends: R (>= 3.4)
 Imports: AnnotationDbi, dendextend, doParallel, foreach, parallel,
         org.Hs.eg.db, GO.db, Rcpp, stats, graphics,
         MultiAssayExperiment, IRanges, S4Vectors

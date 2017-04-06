@@ -79,7 +79,7 @@ aovTopTest <- function(expr, top, sig.level = 0.05, parallel = FALSE) {
     findGeneNames <- function(expr, parallel) {
         if (any(sapply(expr, function(x) is.null(rownames(x)))) ||
             !all(sapply(expr, function(x)
-                sapply(expr, function(y) row.names(x) == row.names(y))))) {
+                sapply(expr, function(y) rownames(x) == rownames(y))))) {
             stop("Not all genes are named or not all genes
                  are in the same order for all data frames,
                  or some genes are missing.")

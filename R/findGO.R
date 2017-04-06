@@ -60,7 +60,9 @@ findGO <- function(groups, topAOV = 50, sig.levelAOV = 0.05,
                    clust.metric = NULL, clust.method = NULL,
                    dist.matrix = NULL, topGO = 3, sig.levelTUK = 0.05,
                    onto = c("MF", "BP", "CC"), extend = FALSE, over.rep = FALSE) {
-    groups <- assay(experiments(groups))
+    #groups <- assay(experiments(groups))
+    g2 <- experiments(groups)
+    groups <- sapply(g2, assay)
     aov.results <- aovTopTest(groups, topAOV, sig.levelAOV, parallel)
     geneUniverse <- rownames(groups[[1]])
     if (!(grouped == "tukey" | grouped == "clustering")) {

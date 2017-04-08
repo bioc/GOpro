@@ -78,4 +78,3 @@ Find top Gene Ontology terms for given genes.
 findGO(exrtcga, grouped = 'clustering', topGO = 10, onto = 'MF')
 findGO(exrtcga, grouped = 'tukey', topGO = 2, extend = TRUE)
 }
-

@@ -10,7 +10,8 @@ test_that("rtcga object is valid", {
 
 context("aovTopTest")
 
-groups <- assay(experiments(exrtcga))
+g2 <- experiments(exrtcga)
+groups <- sapply(g2, assay)
 
 test_that("when top is missing or 0 expect warning", {
     expect_warning(aovTopTest(groups, 0))

@@ -22,4 +22,3 @@ randomly chosen from a list returned by function
 \code{prepareData(RTCGA = TRUE, cohorts = c('leukemia', 'colon', 'bladder'))}.
 }
 \keyword{datasets}
-

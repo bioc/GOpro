@@ -30,4 +30,3 @@ which of them are the most characteristic for the given subset of genes.
 \seealso{
 {\link{findGO}}
 }
-

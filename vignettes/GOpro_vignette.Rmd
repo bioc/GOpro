@@ -14,8 +14,9 @@ BiocStyle::markdown()
 
 # Installation
 ```{r, eval = FALSE}
-source("http://www.bioconductor.org/biocLite.R")
-biocLite("GOpro", dependencies = TRUE)
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("GOpro", dependencies = TRUE)
 ```
 
 # Loading
